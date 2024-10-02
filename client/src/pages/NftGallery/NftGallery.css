@@ -1,0 +1,137 @@
+
+.mint-nft-form-container {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="url"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .nft-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .nft-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .nft-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nft-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+
+
+  .wallet-button {
+    position: absolute; /* Positioning the button absolutely */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+  
+  .wallet-button button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .wallet-button span {
+    color: #007bff; /* Color for the connected account */
+  }
+  
+
+  .account-list {
+    position: absolute; /* Positioning the account list */
+    top: 60px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: white; /* Background color for contrast */
+    border: 1px solid #ccc; /* Border for definition */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+  
+  .account-list button {
+    display: block; /* Block display for buttons */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border: none; /* No border */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+    margin-bottom: 5px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .account-list button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

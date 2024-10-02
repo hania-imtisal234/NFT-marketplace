@@ -24,7 +24,7 @@ async function getMintedTokens(userAddress) {
             tokenUris.push({ uri: tokenUri, image: imageUrl });
         }
 
-        // Return the array of token URIs and image URLs
+      
         return tokenUris;
     } catch (error) {
         console.error('Error retrieving minted tokens:', error);

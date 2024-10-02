@@ -1,0 +1,66 @@
+.mint-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Use 100% to allow responsiveness */
+    max-width: 450px; /* Set a max-width for better layout on larger screens */
+    margin: 20px auto; /* Add margin for spacing */
+    padding: 2rem;
+    border: 1px solid #e0e0e0; /* Lightened border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    background-color: #ffffff; /* White background for contrast */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Increased bottom margin for spacing */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem; /* Adjusted margin for better spacing */
+    font-weight: bold;
+    color: #333; /* Darker color for readability */
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.75rem; /* Increased padding for comfort */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Slightly more rounded corners */
+    box-sizing: border-box;
+    font-size: 16px; /* Improved font size for readability */
+    transition: border-color 0.3s ease; /* Transition for focus effect */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.form-textarea {
+    height: 120px; /* Adjust height for better usability */
+    resize: none; /* Disable resizing for a consistent layout */
+}
+
+.form-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 0.75rem; /* Adjusted padding for balance */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for hover effect */
+}
+
+.form-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover for emphasis */
+}
+
+.form-button:disabled {
+    background-color: #cccccc; /* Disabled state color */
+    cursor: not-allowed; /* Change cursor for disabled state */
+}

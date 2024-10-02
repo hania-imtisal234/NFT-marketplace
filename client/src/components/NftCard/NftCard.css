@@ -1,0 +1,23 @@
+/* NFTCard.css */
+
+.nft-card {
+    border: 1px solid #ccc; /* Light gray border for the card */
+    padding: 10px; /* Padding inside the card */
+    border-radius: 8px; /* Rounded corners */
+    width: 200px; /* Fixed width for the card */
+    text-align: center; /* Center align text and images */
+    background-color: #f9f9f9; /* Light background for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .nft-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  .nft-card img {
+    max-width: 100%; /* Ensure the image does not exceed the card width */
+    height: auto; /* Maintain aspect ratio of images */
+    border-radius: 8px; /* Match image corners with card corners */
+  }
+  

@@ -1,9 +1,9 @@
 import './App.css';
-import MintNFTForm from './MyNft';
+import NftGallery from './pages/NftGallery/NftGallery';
 
 function App() {
   return (
-    <MintNFTForm/>
+    <NftGallery/>
   );
 }
 
