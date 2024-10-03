@@ -1,9 +1,11 @@
 import './App.css';
 import NftGallery from './pages/NftGallery/NftGallery';
+import NftMarketplace from './pages/NftMarketplace/NftMarketplace';
 
 function App() {
   return (
-    <NftGallery/>
+    // <NftGallery/>
+   <NftMarketplace/>
   );
 }
 

@@ -40,7 +40,7 @@ const NftGallery = () => {
     try {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
-      const contractAddress = '0xA619a2A43C5aAcbBb8f13Cf29f51acE23EEFe7dd';
+      const contractAddress = '0x645bb62Ca2735445efe1941e8Aa4b3aBB248327b';
       const contract = new ethers.Contract(contractAddress, MyNFT.abi, signer);
 
       // Fetch the list of minted tokens for the current user
@@ -74,7 +74,7 @@ const NftGallery = () => {
     try {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
-      const contractAddress = '0xA619a2A43C5aAcbBb8f13Cf29f51acE23EEFe7dd';
+      const contractAddress = '0x645bb62Ca2735445efe1941e8Aa4b3aBB248327b';
       const contract = new ethers.Contract(contractAddress, MyNFT.abi, signer);
 
       const tx = await contract.mintNFT(await signer.getAddress(), tokenURI);
@@ -98,7 +98,7 @@ const NftGallery = () => {
     try {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
-      const contractAddress = '0xA619a2A43C5aAcbBb8f13Cf29f51acE23EEFe7dd';
+      const contractAddress = '0x645bb62Ca2735445efe1941e8Aa4b3aBB248327b';
       const contract = new ethers.Contract(contractAddress, MyNFT.abi, signer);
 
       const toAddress = prompt("Enter the address to transfer the NFT:");
@@ -110,7 +110,8 @@ const NftGallery = () => {
         // Refresh the token list for the current owner
         await fetchMintedTokens(await signer.getAddress());
         // Fetch tokens for the new owner to reflect updates if necessary
-        await fetchMintedTokens(toAddress);
+       // await fetchMintedTokens(toAddress);
+    
       }
     } catch (error) {
       console.error('Error transferring NFT:', error);
@@ -138,4 +139,3 @@ const NftGallery = () => {
 };
 
 export default NftGallery;
-
